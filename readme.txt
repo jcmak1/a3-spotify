@@ -28,4 +28,6 @@ I did not add a bonus feature for my submission.
 
 
 6. Is there anything special we need to know in order to run your code?
-No, there is notihng special needed to run my code. 
+The application requires the dummy_webserver provided on Canvas.
+Run npm install and npm start in the dummy_webserver folder.
+Run npm install and ng serve in the client folder.
