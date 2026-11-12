@@ -23,8 +23,21 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
 
+
   search() {
-    //TODO: call search function in spotifyService and parse response
+    if (!this.searchString || !this.searchString.trim()) {
+      return;
+    }
+
+    this.resources = [];
+
+    this.spotifyService.searchFor(
+      this.searchCategory,
+      this.searchString
+    ).then((data) => {
+      this.resources = data;
+    });
   }
+
 
 }

@@ -44,3 +44,23 @@ Thumbs.db
 
 webserver/tokens.json
 webserver/client_secret.json
+
+# Dependencies
+node_modules/
+
+# Dummy server
+dummy_webserver/
+
+# Environment and authentication
+.env
+.env.*
+!.env.example
+client_secret.json
+tokens.json
+
+# Angular build files
+dist/
+.angular/cache/
+
+# macOS
+.DS_Store
